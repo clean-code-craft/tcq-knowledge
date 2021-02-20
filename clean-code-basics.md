@@ -37,6 +37,7 @@ example, a small method in a class at the deepest level could have a very detail
 	- How to determine a suitable and unmistakable prefix for an instantiated C++ template , C# Generics and Java Generics?
 - Avoid Using the Same Name for Different Purposes
 	- Once you’ve introduced a meaningful and expressive name for any kind of software entity (e.g., a class or component), a function, or a variable, you should take care about that its name is never used for any other purpose
+- 
 
 ## Comments
 Truth can only be found in one place: the code.
