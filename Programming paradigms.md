@@ -84,7 +84,6 @@ return gcd(y, x % y)
 
 }
 
-https://www.slideshare.net/LivePersonDev/functional-programming-with-java-8
-https://1lib.in/book/3367330/c6d9c6?dsource=recommend
+
 ```
 
