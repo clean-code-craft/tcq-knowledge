@@ -49,28 +49,16 @@
 ---
 
 - Expressiveness allows Programmers to write less code
+
 - Code brevity and readability (Subjective)
+
 - Concurrency and Synchronization
+  
   - Parallelizing programs written with pure functions is trivial, because those functions don’t mutate anything
+  
 - Performance
 
-
-
-### Multiple Paradigms
-
----
-
-- functional languages with object-oriented features
-  - Ocaml, F#, Scala
-- imperative languages with functional features
-  - Python, Ruby, C#, Java
-- what makes a language functional or imperative?
-  - Pure functions
-  - higher-order functions
-  - immutable data structures
-  - recommended idioms in functional style
-
-
+  
 
 ### Immutability
 
@@ -205,16 +193,6 @@ return  list.Select(StringExt.ToSentenceCase).Select(PrependCounter).ToList();
 
 
 
-
-
-
-
-
-
-
-
-
-
 #### High Order Function
 
 ----
@@ -282,4 +260,32 @@ count_lines_in_files(const std::vector<std::string>& files)
 return files | transform(open_file)| transform(count_lines);
 }
 ```
+
+
+
+#### Expressing function signatures with arrow notation
+
+----
+
+| Function signature  | C#                              | Java                  | C++  | Python | C    |
+| ------------------- | ------------------------------- | --------------------- | ---- | ------ | ---- |
+| int  -> String      | (int i)=> i.ToString()          | (int i)->i.ToString() |      |        |      |
+| (int,int,int)-> int | (int i , int j , int k)=> i+j+k |                       |      |        |      |
+|                     |                                 |                       |      |        |      |
+
+
+
+### Multiple Paradigms
+
+---
+
+- functional languages with object-oriented features
+  - Ocaml, F#, Scala
+- imperative languages with functional features
+  - Python, Ruby, C#, Java
+- what makes a language functional or imperative?
+  - Pure functions
+  - higher-order functions
+  - immutable data structures
+  - recommended idioms in functional style
 
