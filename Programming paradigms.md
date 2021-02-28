@@ -168,13 +168,14 @@ public static IEnumerable<string> Select(this IEnumerable<string> sourceList,Fun
   return temp;
 }    
 }
+
 class ListFormatter
 {
 int counter;
 string PrependCounter(string s) { return  $"{++counter}. {s}"; }
 public List<string> Format(List<string> list)
 {
-return  list.Select(StringExt.ToSentenceCase).Select(PrependCounter).ToList();
+return  list.Select(StringExt.ToSentenceCase).AsParallel().Select(PrependCounter).ToList();
 }
 
     
